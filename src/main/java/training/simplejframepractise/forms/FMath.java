@@ -18,6 +18,7 @@ import javax.swing.JTextField;
 /**
  *
  * @author siux
+ * Class FMath has been built for implementing a basic math calculator
  */
 public class FMath extends JFrame{
     
