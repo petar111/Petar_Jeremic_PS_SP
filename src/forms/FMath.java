@@ -1,12 +1,12 @@
+
+package forms;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package training.simplejframepractise.forms;
 
-import java.awt.Font;
-import java.awt.LayoutManager;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 /**
  *
  * @author siux
- * Class FMath has been built for implementing a basic math calculator
+ * 
  */
 public class FMath extends JFrame{
     
@@ -26,6 +26,11 @@ public class FMath extends JFrame{
         initComponents();
     }
 
+    /**
+     * Initializes components when frame has been instanced.
+     * 
+     */
+    
     private void initComponents() {
         txtA = new JTextField();
         txtB = new JTextField();

@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package training.start;
+package start;
 
-import training.simplejframepractise.forms.FMath;
+import forms.FMath;
 
 /**
  *
  * @author siux
  */
+
 public class Start {
     
     public static void main(String[] args) {
