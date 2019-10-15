@@ -35,12 +35,17 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 /**
- *
+ *Class FMath provides simple mathematics operations supported with GUI.
  * @author siux
  * 
  */
 public class FMath extends JFrame{
     
+    
+    
+    /**
+     * Constructor for FMath object.
+     */
     public FMath(){
         initComponents();
     }
@@ -69,6 +74,9 @@ public class FMath extends JFrame{
         btnSub = new JButton();
         btnSum = new JButton();
         
+        
+        
+        //Initializing panels
         warningPane = new JScrollPane(txtWarning, JScrollPane.VERTICAL_SCROLLBAR_NEVER, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         
      
@@ -82,17 +90,20 @@ public class FMath extends JFrame{
         this.setContentPane(new JPanel());
         this.setMinimumSize(new Dimension(150, 190));
         
-        
+        //Adding reference variable of main panel for simplicity.
         Container pane = this.getContentPane();
         
-        
+        //Setting layout for main panel.
         pane.setLayout(new BorderLayout());
         
+        
+        //Adding panels to main panel.
         pane.add(mathOperandsAndResultPanel, BorderLayout.CENTER);
         pane.add(buttonsPanel, BorderLayout.SOUTH);
         //pane.add(warningPanel, BorderLayout.NORTH);
         pane.add(warningPane, BorderLayout.NORTH);
-        
+
+        //Setting layout to mathOperandsAndResultPanel
         GroupLayout mathOandRLayout = new GroupLayout(mathOperandsAndResultPanel);
         mathOandRLayout.setAutoCreateContainerGaps(true);
         mathOandRLayout.setAutoCreateGaps(true);
@@ -102,7 +113,6 @@ public class FMath extends JFrame{
         
         
         //mathOperandsAndResultPanel has a group layout
-        
         mathOandRLayout.setHorizontalGroup(
                                 mathOandRLayout.createSequentialGroup()
                                         .addGroup(mathOandRLayout
@@ -139,11 +149,7 @@ public class FMath extends JFrame{
         mathOperandsAndResultPanel.add(txtResult);
         */
         
-        
-        
-        
-        
-        
+        //Adding buttons to buttonsPanel.
         buttonsPanel.add(btnSum);
         buttonsPanel.add(btnSub);
        // buttonsPanel.setMinimumSize(new Dimension(110, 20));
@@ -154,7 +160,7 @@ public class FMath extends JFrame{
        // warningPanel.setMinimumSize(new Dimension(200, 20));
        
         
-        
+        //Setting components properties.
         lblWarning.setForeground(Color.ORANGE);
         lblWarning.setFont(new Font("Default", Font.BOLD, 15));
        // lblWarning.setPreferredSize(new Dimension(100, 20));
@@ -239,7 +245,7 @@ public class FMath extends JFrame{
         btnSub.setText("Sub");
         */
         
-        
+        //Adding listeners to components.
         txtWarning.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
