@@ -1,10 +1,5 @@
 
 package forms;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 
 import java.awt.event.ActionEvent;
@@ -18,7 +13,7 @@ import javax.swing.JTextField;
 /**
  *
  * @author siux
- * 
+ * Class FMath is used for doing simple calculations with integers supported with GUI. 
  */
 public class FMath extends JFrame{
     
@@ -27,11 +22,13 @@ public class FMath extends JFrame{
     }
 
     /**
-     * Initializes components when frame has been instanced.
+     * First initialization when FMath object has been made.
      * 
      */
-    
     private void initComponents() {
+        
+        
+        // Creating component objects.
         txtA = new JTextField();
         txtB = new JTextField();
         txtResult = new JTextField();
@@ -43,11 +40,16 @@ public class FMath extends JFrame{
         btnSub = new JButton();
         btnSum = new JButton();
         
+        
+        //Setting frame properties.
         this.setBounds(10, 50, 500, 300);
         this.setContentPane(new JPanel());
-        this.getContentPane().setLayout(null);
         this.setResizable(false);
         
+        //Setting layout for main panel.
+        this.getContentPane().setLayout(null);
+        
+        //Adding components to main panel.
         this.getContentPane().add(txtA);
         this.getContentPane().add(txtB);
         this.getContentPane().add(txtResult);
@@ -64,6 +66,9 @@ public class FMath extends JFrame{
         this.getContentPane().add(btnSum);
         this.getContentPane().add(btnSub);
         
+        
+        
+        //Setting components properties.
         txtA.setBounds(40, 20, 100, 20);
         
         lblA.setBounds(20, 20, 15, 20);
@@ -87,6 +92,9 @@ public class FMath extends JFrame{
         btnSub.setBounds(100, 150, 70, 20);
         btnSub.setText("Sub");
         
+        
+        
+        //Adding action listeners to buttons.
         btnSum.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
@@ -105,17 +113,28 @@ public class FMath extends JFrame{
        
     }
     
-    private JLabel testLabel;
-    
+    // Text field for first operand.
     private JTextField txtA;
+    // Text field for first operand.
     private JTextField txtB;
+    // Text field for result.
     private JTextField txtResult;
     
+    
+    // Label for first operand.
     private JLabel lblA;
+    
+    // Label for first operand.
     private JLabel lblB;
+    
+    // Label for first operand.
     private JLabel lblResult;
     
+    
+    //Button that calls sum operation.
     private JButton btnSum;
+    
+    //Button that calls subtract operation
     private JButton btnSub;
     
     
