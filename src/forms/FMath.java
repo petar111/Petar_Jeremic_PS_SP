@@ -115,7 +115,7 @@ public class FMath extends JFrame{
     
     // Text field for first operand.
     private JTextField txtA;
-    // Text field for first operand.
+    // Text field for second operand.
     private JTextField txtB;
     // Text field for result.
     private JTextField txtResult;
@@ -124,10 +124,10 @@ public class FMath extends JFrame{
     // Label for first operand.
     private JLabel lblA;
     
-    // Label for first operand.
+    // Label for second operand.
     private JLabel lblB;
     
-    // Label for first operand.
+    // Label for result.
     private JLabel lblResult;
     
     
