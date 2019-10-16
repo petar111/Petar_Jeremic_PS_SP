@@ -1,0 +1,5 @@
+The usual way to define what three letters you should use for a prefix is to remove all the vowels 
+from the widget's name and also all repeating consonants. If there are more then three consonants 
+left, they should be ignored. Therefore, a textbox (or TextField, or whatever this widget is called 
+in your preferred widget toolkit) becomes 'txt', a label 'lbl', a combo box 'cmb', a table 'tbl' 
+and so on.
