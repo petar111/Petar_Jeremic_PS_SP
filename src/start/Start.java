@@ -5,7 +5,8 @@
  */
 package start;
 
-import forms.FMath;
+import ui.forms.FMath;
+import ui.forms.FrmPerson;
 
 /**
  *
@@ -15,8 +16,10 @@ import forms.FMath;
 public class Start {
     
     public static void main(String[] args) {
-        FMath fMath = new FMath();
-        fMath.setVisible(true);
+        //FMath fMath = new FMath();
+       // fMath.setVisible(true);
+       
+       new FrmPerson().setVisible(true);
     }
     
 }
