@@ -11,6 +11,7 @@ import ui.forms.FrmPerson;
 /**
  *
  * @author siux
+ * proba 05.11.2019.
  */
 
 public class Start {
