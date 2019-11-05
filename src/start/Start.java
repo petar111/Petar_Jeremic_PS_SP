@@ -7,6 +7,7 @@ package start;
 
 import ui.forms.FMath;
 import ui.forms.FrmPerson;
+import ui.forms.FrmPersonv4;
 
 /**
  *
@@ -20,7 +21,7 @@ public class Start {
         //FMath fMath = new FMath();
        // fMath.setVisible(true);
        
-       new FrmPerson().setVisible(true);
+       new FrmPersonv4().setVisible(true);
     }
     
 }
